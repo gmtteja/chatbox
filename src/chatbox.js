@@ -71,7 +71,7 @@ const Container = styled.div`
 #emoji-picker{
     position: fixed; 
     display: none;
-    top:380px;
+    top:200px;
 }
 .emoji{
     
@@ -106,19 +106,16 @@ const EmojiClicked = (event , emojiObject)=>{
           <Picker onEmojiClick={EmojiClicked} />
         </div>
             <div className="hr"></div>
-            
-             <i onClick={(e) => {
-                e.target.style.backgroundColor =
-                  e.target.style.backgroundColor === "lightgreen"
-                    ? "white"
-                    : "#ffffff";
-
-                let ele = document.getElementById("emoji-picker");
-                ele.style.display =
-                  ele.style.display === "block" ? "none" : "block";
+              <i onClick={(e)=>{
+e.target.backgroundColor = 
+e.target.backgroundColor ===  "white"
+? "white" : "#ffffff";
+let ele = document.getElementById("emoji-picker");
+ele.style.display = 
+ele.style.display === "block" ? "none" : "block";
               }}
               style={{
-                //border: "1px solid black",
+              
                 backgroundColor: "white",
                 textAlign: "center",
                 position:"relative",
